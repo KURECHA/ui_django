@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    
+    
+<link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous"
+    />
+
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="Header">
+        エコバッグチェッカー(仮)
+      </div>
+    </header>
+    <div class="container">
+      <div class="text-center mt-5 mb-5">
+        <h3>エコバッグのサイズを選択してください</h3>
+      </div>
+      <!-- <div id="main"></div> -->
+      <div class="flex_container">
+        <div class="d-flex justify-content-around">
+          <!-- <button class="big_size" onclick="location.href='php/frame.php'"> -->
+          <button type="button" class="btn-danger" id="big_size" onclick="location.href='box_camera/'">
+            大
+          </button>
+          <!-- <button class="middle_size" onclick="location.href='php/frame.php'"> -->
+          <button type="button" class="btn-success" id="mid_size" onclick="location.href='box_camera/'">
+            中
+          </button>
+          <!-- <button class="small_size" onclick="location.href='php/logout.php'"> -->
+          <button type="button" class="btn-info" id="small_size" onclick="location.href='box_camera/'">
+            小
+          </button>
+        </div>
+      </div>
+
+      <div class="flex_container">
+        <div class="d-flex justify-content-around">
+          <!-- <button class="custom_size" onclick="location.href='php/logout.php'"> -->
+          <button type="button" class="btn-light" id="custom">
+            カスタム
+          </button>
+          <!-- <button class="none_eco_bag" onclick="location.href='management'"> -->
+          <button type="button" class="btn-dark" id="none_bag" onclick="location.href='box_camera/'">
+            なし
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- モーダルの設定 -->
+
+    <!-- <div
+      class="modal fade"
+      id="Modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="Modal"
+      aria-hidden="true"
+    > -->
+      <!--以下modal-dialogのCSSの部分で modal-lgやmodal-smを追加するとモーダルのサイズを変更することができる-->
+      <!-- <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="graph_name">頻度グラフ</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="閉じる"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="target"></div>
+          <script
+            type="text/javascript"
+            src="https://www.google.com/jsapi"
+          ></script>
+          <div id="gct_sample_column" style="width: 100%; height: 100%;"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              閉じる
+            </button>
+          </div>
+        </div>
+      </div> -->
+    <!-- </div> -->
+
+    <!-- JSファイル -->
+    <!-- <script src="../js/call-api.js"></script> -->
+    <!-- <script src="js/show-users.js"></script> -->
+    <!-- <script src="js/drow-count-graph.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
