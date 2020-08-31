@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home',
     'box_camera',
     'result',
+    'custom_system',
     
 ]
 

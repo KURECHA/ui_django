@@ -15,13 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include
+
+from . import views
 
 
 urlpatterns = [
-    path('', include('home.urls')),
-    path('box_camera/', include('box_camera.urls')),
-    path('result/', include('result.urls')),
-    path('admin/', admin.site.urls),
-    path('custom_system/', include('custom_system.urls'))
+
+    path('', views.custom_template, name="custom_system"),
+
 ]

@@ -6,5 +6,5 @@ from django.http import HttpResponse
 def  boxcamera_template(request):
     # cap_box.cap_box()
     size = request.GET.get('size')
-    print("#############################",size)
+    print(size)
     return render(request, 'box_camera.html')
