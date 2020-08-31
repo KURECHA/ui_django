@@ -22,6 +22,7 @@ def cap_box():
 
 	while True:
 		_, frame = cap.read()
+		cv2.imwrite("img", frame)
 
 		#YOLOを使ってかごの領域を検出→かごの領域を取得、
 		region = gr.get_resion_box(frame, weights=weights_box, conf_thre=conf_thre)

@@ -14,19 +14,29 @@
   </head>
 
   <body>
-    <div id="result_text">
-        結果画面だよ
+    <div class="Header">
     </div>
     <div class="container">
       <div class="flex_container">
         <div class="d-flex justify-content-around">
-
+          <button type="button" class="btn-dark" id="back_size_display" onclick="location.href='/'">
+          </button>
         </div>
       </div>
     </div>
+    <img src="{% static '/images/eco_kurecha.png' %}" class="img-fluid" alt="Responsive image" id="eco_bag_image">
 
+    <div>
+      <meter max="100" low="60" high="89" value="70" id="meter_zone"></meter>
+      <p style="display:inline;" id="cup"></p>%
+    </div>
+    <div>
+      <h2 class="result_text">はいっちょる！！</h2>
+    </div>
+
+    <script src="{% static 'js/countup.js' %}"></script>
     <!-- Bootstrap -->
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
@@ -40,6 +50,6 @@
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
   </body>
 </html>
