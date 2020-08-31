@@ -2,6 +2,8 @@ from . import get_region as gr
 import cv2
 import numpy as np
 
+from hichoruca.settings import BASE_DIR
+
 def cap_box():
 
 	cap = cv2.VideoCapture(0)
@@ -16,8 +18,8 @@ def cap_box():
 
 	eco_bag_size = 31
 
-	weights_box="weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
-	weights_item="weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
+	weights_box= BASE_DIR + "box_camera/yolov5/weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
+	weights_item= BASE_DIR + "box_camera/yolov5/weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
 	conf_thre =0.5
 
 	while True:
