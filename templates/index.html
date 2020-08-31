@@ -4,24 +4,19 @@
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
-    
-    
-<link
+    <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous"
     />
-
-
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
   </head>
 
   <body>
 
     <header>
       <div class="Header">
-        エコバッグチェッカー(仮)
       </div>
     </header>
     <div class="container">
@@ -32,16 +27,16 @@
       <div class="flex_container">
         <div class="d-flex justify-content-around">
           <!-- <button class="big_size" onclick="location.href='php/frame.php'"> -->
-          <button type="button" class="btn-danger" id="big_size" onclick="location.href='box_camera/'">
+          <button type="button" class="btn-success" id="big_size" onclick="location.href='box_camera/?size=15'">
             大
           </button>
           <!-- <button class="middle_size" onclick="location.href='php/frame.php'"> -->
-          <button type="button" class="btn-success" id="mid_size" onclick="location.href='box_camera/'">
-            中
+          <button type="button" class="btn-success" id="small_size" onclick="location.href='box_camera/?size=5'">
+            小
           </button>
           <!-- <button class="small_size" onclick="location.href='php/logout.php'"> -->
-          <button type="button" class="btn-info" id="small_size" onclick="location.href='box_camera/'">
-            小
+          <button type="button" class="btn-light" id="none_bag" onclick="location.href='box_camera/?size=0'">
+            レジ袋
           </button>
         </div>
       </div>
@@ -49,13 +44,13 @@
       <div class="flex_container">
         <div class="d-flex justify-content-around">
           <!-- <button class="custom_size" onclick="location.href='php/logout.php'"> -->
-          <button type="button" class="btn-light" id="custom">
+          <button type="button" class="btn-dark" id="custom" onclick="location.href='./custom_size.html'">
             カスタム
           </button>
           <!-- <button class="none_eco_bag" onclick="location.href='management'"> -->
-          <button type="button" class="btn-dark" id="none_bag" onclick="location.href='box_camera/'">
+          <!-- <button type="button" class="btn-light" id="none_bag" onclick="location.href='./box_camera.html'">
             なし
-          </button>
+          </button> -->
         </div>
       </div>
     </div>
