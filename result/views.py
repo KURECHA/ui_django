@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def  index_template(request):
-    present = 10
+    present = 50
     params = {
         'value': str(present),
     }

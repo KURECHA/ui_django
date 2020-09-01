@@ -1,4 +1,4 @@
-from . import get_region as gr
+from box_camera import get_region as gr
 import cv2
 import numpy as np
 
@@ -18,13 +18,13 @@ def cap_box():
 
 	eco_bag_size = 31
 
-	weights_box= BASE_DIR + "box_camera/yolov5/weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
-	weights_item= BASE_DIR + "box_camera/yolov5/weights/kaimono/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
+	weights_box= BASE_DIR + "/box_camera/weights/kaimono_box_weight/best_kaimono_e1000_20200822.pt"
+	weights_item= BASE_DIR + "/box_camera/weights/kaimono_item_weight/best_kaimono_e1000_20200822.pt"
 	conf_thre =0.5
 
 	while True:
 		_, frame = cap.read()
-		cv2.imwrite("img", frame)
+		# cv2.imwrite("img", frame)
 
 		#YOLOを使ってかごの領域を検出→かごの領域を取得、
 		region = gr.get_resion_box(frame, weights=weights_box, conf_thre=conf_thre)

@@ -2,7 +2,7 @@ var num = 0;
 var tgt = 70;
 var speed = 30;
 setInterval(function() {
-    if(num <= tgt) {
+    if(num <= tgr) {
         // var doc0 = document.getElementById("cup").innerText = num;
         document.getElementById("cup").innerText = num;
         num++;

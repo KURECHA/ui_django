@@ -1,3 +1,7 @@
+from hichoruca.settings import BASE_DIR
+import sys
+sys.path.append(BASE_DIR + "/box_camera")
+
 
 import argparse
 import os
